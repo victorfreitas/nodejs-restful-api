@@ -1,0 +1,23 @@
+{
+  "extends": ["eslint:recommended", "airbnb/base"],
+  "parser": "babel-eslint",
+  "env": {
+    "browser": false,
+    "node": true
+  },
+  "settings": {
+    "import/resolver": "webpack"
+  },
+  "rules": {
+    "semi": ["error", "never"],
+    "space-before-function-paren": ["error", "never"],
+    "arrow-parens": ["error", "as-needed", { "requireForBlockBody": true }],
+    "comma-dangle": ["error", {
+      "arrays": "always-multiline",
+      "objects": "always-multiline",
+      "imports": "always-multiline",
+      "exports": "always-multiline",
+      "functions": "never"
+    }]
+  }
+}
